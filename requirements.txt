@@ -1,0 +1,40 @@
+# 医疗智能体ART强化学习训练系统依赖包
+# Medical AI Agent ART Reinforcement Learning Training System Dependencies
+
+# ==================== 核心框架 / Core Framework ====================
+openpipe-art[backend]==0.4.8
+
+# ==================== 机器学习 / Machine Learning ====================
+torch>=2.0.0
+vllm>=0.9.0
+triton>=3.0.0
+
+# ==================== 自然语言处理 / NLP ====================
+langchain-core
+litellm[proxy]
+tenacity
+
+# ==================== 数据处理 / Data Processing ====================
+datasets
+pandas
+numpy
+tqdm
+
+# ==================== 配置和工具 / Configuration and Tools ====================
+pyyaml
+pydantic
+python-dotenv
+
+# ==================== 实验跟踪 / Experiment Tracking ====================
+weave
+wandb
+
+# ==================== 其他依赖 / Other Dependencies ====================
+gql<4
+protobuf==5.29.5
+sqlite3  # Python内置 / Built-in
+
+# ==================== 开发工具 (可选) / Development Tools (Optional) ====================
+# pytest  # 用于测试 / For testing
+# black   # 代码格式化 / Code formatting
+# flake8  # 代码检查 / Code linting

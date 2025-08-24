@@ -1,0 +1,139 @@
+# 医疗智能体ART强化学习训练配置文件模板
+# Medical AI Agent ART Reinforcement Learning Training Configuration Template
+
+# ==================== API密钥配置 / API Keys Configuration ====================
+api_keys:
+  # OpenAI API密钥（用于RULER评判模型）/ OpenAI API Key (for RULER judge model)
+  openai_api_key: "your-openai-api-key-here"
+  
+  # OpenRouter API密钥（用于数据生成和模型推理）/ OpenRouter API Key (for data generation and model inference)
+  openrouter_api_key: "your-openrouter-api-key-here"
+  
+  # Weights & Biases API密钥（可选，用于实验跟踪）/ Weights & Biases API Key (optional, for experiment tracking)
+  wandb_api_key: "your-wandb-api-key-here"
+  
+  # HuggingFace Token（用于模型和数据集上传下载）/ HuggingFace Token (for model and dataset upload/download)
+  hf_token: "your-huggingface-token-here"
+
+# ==================== 模型配置 / Model Configuration ====================
+model:
+  # 基础模型名称 / Base model name
+  base_model: "Qwen/Qwen2.5-7B-Instruct"
+  
+  # 训练模型名称 / Training model name
+  name: "medical-agent-001"
+  
+  # 项目名称 / Project name
+  project: "medical-search-agent"
+  
+  # RULER评判模型 / RULER judge model
+  ruler_model: "openrouter/deepseek/deepseek-chat-v3.1"
+  
+  # 系统提示生成模型 / System prompt generation model
+  system_prompt_generation_model: "openrouter/deepseek/deepseek-chat-v3.1"
+  
+  # 输入生成模型 / Input generation model
+  input_generation_model: "openrouter/deepseek/deepseek-chat-v3.1"
+
+# ==================== 训练参数 / Training Parameters ====================
+training:
+  # 每步的组数 / Groups per step
+  groups_per_step: 2
+  
+  # 训练轮数 / Number of training epochs
+  num_epochs: 10
+  
+  # 每组的rollout数量 / Number of rollouts per group
+  rollouts_per_group: 4
+  
+  # 学习率 / Learning rate
+  learning_rate: 0.00001  # 1e-5
+  
+  # 最大训练步数 / Maximum training steps
+  max_steps: 10
+  
+  # 最大对话轮数 / Maximum conversation turns
+  max_turns: 10
+  
+  # 温度参数 / Temperature parameter
+  temperature: 1.0
+  
+  # GPU内存使用率 / GPU memory utilization
+  gpu_memory_utilization: 0.8
+  
+  # 最大序列长度 / Maximum sequence length
+  max_seq_length: 8192
+  
+  # 日志概率计算块大小 / Log probability calculation chunk size
+  logprob_calculation_chunk_size: 8
+
+# ==================== 数据配置 / Data Configuration ====================
+data:
+  # HuggingFace数据集仓库名称 / HuggingFace dataset repository name
+  hf_dataset_repo_name: "update0909/medical-qa-scenarios"
+  
+  # HuggingFace模型仓库名称 / HuggingFace model repository name
+  hf_model_repo_name: "update0909/medical-agent-001"
+  
+  # 训练场景限制数量 / Training scenarios limit
+  training_scenarios_limit: 20
+  
+  # 是否随机打乱数据 / Whether to shuffle data
+  shuffle_data: true
+  
+  # 随机种子 / Random seed
+  random_seed: 42
+  
+  # 最大搜索结果数 / Maximum search results
+  max_search_results: 10
+
+# ==================== 数据库配置 / Database Configuration ====================
+database:
+  # 数据库路径 / Database path
+  db_path: "./medical_knowledge.db"
+  
+  # 医疗数据路径 / Medical data path
+  medical_data_path: "./curebench_valset_phase1.jsonl"
+
+# ==================== 路径配置 / Path Configuration ====================
+paths:
+  # Google Drive保存路径 / Google Drive save path
+  drive_save_path: "/content/drive/MyDrive/med_art_rl"
+  
+  # ART后端路径 / ART backend path
+  art_backend_path: "./.art"
+  
+  # 推理结果保存路径 / Inference results save path
+  inference_results_path: "./inference_results"
+
+# ==================== 医疗信息类别 / Medical Information Categories ====================
+medical_categories:
+  - "治疗建议"
+  - "不良事件"
+  - "药物概述"
+  - "药物成分"
+  - "药物警示与安全性"
+  - "药物依赖与滥用"
+  - "剂量与用法"
+  - "特定人群用药"
+  - "药理学"
+  - "临床信息"
+  - "非临床毒理学"
+  - "以患者为中心的信息"
+
+# ==================== 推理测试配置 / Inference Test Configuration ====================
+inference:
+  # 测试批次大小 / Test batch size
+  batch_size: 5
+  
+  # 测试轮次 / Number of test rounds
+  test_rounds: 3
+  
+  # 结果保存格式 / Result save format
+  result_format: "csv"
+  
+  # 是否保存详细日志 / Whether to save detailed logs
+  save_detailed_logs: true
+  
+  # 置信度阈值 / Confidence threshold
+  confidence_threshold: 0.7
