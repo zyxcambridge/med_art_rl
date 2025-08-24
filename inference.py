@@ -30,7 +30,7 @@ import art  # ART强化学习框架 / ART reinforcement learning framework
 from art.local import LocalBackend  # ART本地后端 / ART local backend
 
 # 导入原始训练模块的类和函数 / Import classes and functions from original training module
-from med_art_rl_claude_20250824 import (
+from med_art_rl import (
     MedicalScenario,  # 医疗场景类 / Medical scenario class
     MedicalScenarioWrapper,  # 医疗场景包装器 / Medical scenario wrapper
     medical_rollout,  # 医疗rollout函数 / Medical rollout function
