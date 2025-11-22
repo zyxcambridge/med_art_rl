@@ -35,6 +35,19 @@ This project is a medical AI agent reinforcement learning training system based 
 - 📈 **结果分析**: CSV格式结果保存，支持详细的性能分析
 - 🔒 **安全配置**: .gitignore保护敏感配置信息
 
+## ☁️ Google Cloud 支持 / Google Cloud Support
+
+我们为参与者准备了GCP积分。按时完成项目并遵守表格中所有步骤的参与者将获得一份纪念品。对于那些创作出更酷炫、更有影响力、更贴合表格中建议主题的项目的参与者，我们将额外赠送纪念品以表谢意。
+
+我们可能会通过谷歌的官方渠道推广您的项目，并有机会与谷歌相关团队合作，将您的作品发布到开发者博客或 YouTube 视频上。
+
+> Google AI 开发者计划团队通过提供 Google Cloud Credit 为这项工作提供了支持。
+
+### 后续行动 / Next Steps
+- 完成任何由GCP支持的成果后，请向我们回复并附上最终文章或仓库链接（博客、GitHub、Kaggle Notebook等），确保内容与项目相关，若能详细介绍并使用 Google AI/Cloud 产品更佳。
+- 使用前请查阅官方使用指南，并在指定入口兑换优惠券；注册截止日期为 **2025-10-20**，额度自注册起 **60天** 内有效。
+- 如有发布、重大更新或遇到问题，欢迎随时与我们联系。
+
 ## 🔒 安全配置 / Security Configuration
 
 ⚠️ **重要安全说明 / Important Security Notes:**
