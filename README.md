@@ -11,6 +11,11 @@
 
 This project is a medical AI agent reinforcement learning training system based on the ART (Automatic Reward Training) framework. The system can train a professional medical Q&A agent with capabilities including medical knowledge base search, medical question answering, and treatment recommendations.
 
+## 🏆 竞赛成绩与致谢 / Achievements & Acknowledgements
+
+- 在 Kaggle Cure-Bench 竞赛中获得全球第二名（[Leaderboard](https://www.kaggle.com/competitions/cure-bench/leaderboard)）。
+- 特别感谢 Google Gemini Search：我们将其检索结果作为真值对照，帮助整体成绩提升约 10 个百分点。
+
 ## 🎯 核心功能 / Core Features
 
 ### 医疗智能体能力 / Medical Agent Capabilities
