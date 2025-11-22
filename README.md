@@ -52,10 +52,10 @@ This project is a medical AI agent reinforcement learning training system based 
 
 ⚠️ **重要安全说明 / Important Security Notes:**
 
-- 本项目使用 [config.yaml.template](file:///Users/udpate/Desktop/med_art_rl/config.yaml.template) 作为配置模板
+- 本项目使用 `config.yaml.template` 作为配置模板
 - 请复制模板文件并重命名为 `config.yaml`，然后填入您的API密钥
 - **绝对不要**将包含真实API密钥的 `config.yaml` 文件提交到GitHub
-- `config.yaml` 文件已在 [.gitignore](file:///Users/udpate/Desktop/med_art_rl/.gitignore) 中被排除，确保不会被意外提交
+- `config.yaml` 文件已在 `.gitignore` 中被排除，确保不会被意外提交
 
 ```bash
 # 复制配置文件模板
@@ -131,3 +131,10 @@ vim config.yaml
 # 使用您的HuggingFace Token进行认证 / Authenticate with your HuggingFace Token
 huggingface-cli login
 ```
+
+## ☁️ Google Cloud 支持 / Google Cloud Support
+
+- Google AI 开发者计划团队通过提供 Google Cloud Credit 为这项工作提供了支持。
+- 完成任何由 GCP 资助的关键成果后，请向团队反馈并附上相关内容链接（如博客文章、GitHub 仓库、Kaggle Notebook 等），以便持续评估与支持。
+- 优惠券须在 2025 年 10 月 20 日前注册，额度自兑换之日起 60 天内有效；请优先阅读官方使用指南并完成兑换流程。
+- 若项目有新版本、重大更新或使用 Google AI 产品时遇到问题，请及时联系 Google AI 开发者计划团队。
