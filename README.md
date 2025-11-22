@@ -118,3 +118,7 @@ vim config.yaml
 # 使用您的HuggingFace Token进行认证 / Authenticate with your HuggingFace Token
 huggingface-cli login
 ```
+
+## 🙏 支持声明 / Support Statement
+
+Google AI 开发者计划团队通过提供 Google Cloud Credit 为这项工作提供了支持。
